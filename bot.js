@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '2'
+const prefix = '!!'
 
 client.on('ready', () => {
     console.log(`~~~~~~~~~~~~~~~~~`);
@@ -9,7 +9,7 @@ client.on('ready', () => {
     console.log(`on  ${client.guilds.size} Servers `);
     console.log(`~~~~~~~~~~~~~~~~~~~~~~~~`);
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setGame(`#TheH1ts clan|$Help`,"http://twitch.tv/y04zgamer")
+    client.user.setGame(`Creators Server`,"http://twitch.tv/y04zgamer")
     client.user.setStatus("dnd")
  });
  
@@ -25,7 +25,7 @@ client.on('ready', () => {
 
 
 client.on('message', message => {
-    var prefix = "2";
+    var prefix = "!!";
     
         if (message.author.id === client.user.id) return;
         if (message.guild) {
